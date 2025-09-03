@@ -35,7 +35,7 @@ export default function Contact() {
             <InfoBox>
               <InfoItem>
                 <IconWrapper>
-                  <img src="../../../public/icons/tel.png" alt="Phone Number" />
+                  <img src="/icons/tel.png" alt="Phone Number" />
                 </IconWrapper>
                 <div>
                   <strong>Phone Number</strong>
@@ -45,7 +45,7 @@ export default function Contact() {
 
               <InfoItem>
                 <IconWrapper>
-                  <img src="../../../public/icons/email.png" alt="Email" />
+                  <img src="/icons/email.png" alt="Email" />
                 </IconWrapper>
                 <div>
                   <strong>Email</strong>
@@ -57,10 +57,7 @@ export default function Contact() {
 
               <InfoItem>
                 <IconWrapper>
-                  <img
-                    src="../../../public/icons/linkedin.png"
-                    alt="LinkedIn"
-                  />
+                  <img src="/icons/linkedin.png" alt="LinkedIn" />
                 </IconWrapper>
                 <div>
                   <strong>LinkedIn</strong>
@@ -72,7 +69,7 @@ export default function Contact() {
 
               <InfoItem>
                 <IconWrapper>
-                  <img src="../../../public/icons/adress.png" alt="Adress" />
+                  <img src="/icons/adress.png" alt="Address" />
                 </IconWrapper>
                 <div>
                   <strong>Address</strong>
