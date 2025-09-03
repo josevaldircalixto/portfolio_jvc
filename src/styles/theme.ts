@@ -7,7 +7,7 @@ export const theme = {
     accentSoft: "#2a5f3a",
   },
   fonts: {
-    mono: "'Fira Code', monospace",
+    mono: "'DM Mono', monospace",
     sans: "Inter, sans-serif",
   },
   layout: { max: "1200px" },

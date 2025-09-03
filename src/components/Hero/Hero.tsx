@@ -10,6 +10,8 @@ import {
   CaretH,
   CodeTag,
   HeroImage,
+  Content,
+  ContainerContact, // <- importe Content
 } from "./styles";
 import TechCarousel from "../TechCarousel/TechCarousel";
 import foto from "../../assets/images/foto_de_Jose_Valdir_Calixto.jpg";
@@ -67,50 +69,53 @@ export default function Hero() {
   ];
 
   return (
-    <Section>
-      <div>
-        <p className="mono" style={{ opacity: 0.85 }}>
-          <CodeTag>&lt;span&gt;</CodeTag>
-          Hey, I’m José
-          <CaretV />
-          <CodeTag>&lt;/span&gt;</CodeTag>
-        </p>
+    <ContainerContact>
+      <Section>
+        <Content>
+          <p className="mono" style={{ opacity: 0.85 }}>
+            <CodeTag>&lt;span&gt;</CodeTag>
+            Hey, I’m José
+            <CaretV />
+            <CodeTag>&lt;/span&gt;</CodeTag>
+          </p>
 
-        {/* título + cursor horizontal */}
-        <Title>
-          Engenheiro de Software <span className="code">{"{Front-End}"}</span>
-          <br />
-          focado em Web<CaretH>_</CaretH>
-        </Title>
+          {/* título + cursor horizontal */}
+          <Title>
+            Engenheiro de Software <span className="code">{"{Front-End}"}</span>
+            <br />
+            focado em Web<CaretH>_</CaretH>
+          </Title>
 
-        {/* texto baseado no seu CV */}
-        <Subtitle>
-          Cursando{" "}
-          <span className="highlight">Engenharia de Software (USF)</span> e
-          especialização em{" "}
-          <span className="highlight">Engenharia de Front-End (EBAC)</span>.
-          Experiência prática com <span className="highlight">HTML</span>,{" "}
-          <span className="highlight">CSS</span>,{" "}
-          <span className="highlight">JavaScript</span>,{" "}
-          <span className="highlight">TypeScript</span>,{" "}
-          <span className="highlight">React</span>,{" "}
-          <span className="highlight">Bootstrap</span> e{" "}
-          <span className="highlight">Git/GitHub</span>.
-        </Subtitle>
+          {/* texto baseado no seu CV */}
+          <Subtitle>
+            <CodeTag>&lt;p&gt;</CodeTag>
+            Cursando{" "}
+            <span className="highlight">Engenharia de Software (USF)</span> e
+            especialização em{" "}
+            <span className="highlight">Engenharia de Front-End (EBAC)</span>.
+            Experiência prática com <span className="highlight">HTML</span>,{" "}
+            <span className="highlight">CSS</span>,{" "}
+            <span className="highlight">JavaScript</span>,{" "}
+            <span className="highlight">TypeScript</span>,{" "}
+            <span className="highlight">React</span>,{" "}
+            <span className="highlight">Bootstrap</span> e{" "}
+            <span className="highlight">Git/GitHub</span>.
+            <CodeTag>&lt;p&gt;</CodeTag>
+          </Subtitle>
 
-        {/* carrossel de tecnologias */}
-        <TechBlock>
-          <TechCarousel speedMs={18000}>{techFallback}</TechCarousel>
-        </TechBlock>
+          {/* carrossel de tecnologias */}
+          <TechBlock>
+            <TechCarousel speedMs={18000}>{techFallback}</TechCarousel>
+          </TechBlock>
 
-        <Cta href="/CV_Jose_Valdir_Calixto.pdf" download>
-          <Download size={18} /> Baixar meu CV
-        </Cta>
-      </div>
-
-      <Portrait>
-        <HeroImage src={foto} alt="José Valdir Calixto" />
-      </Portrait>
-    </Section>
+          <Cta href="/CV_Jose_Valdir_Calixto.pdf" download>
+            <Download size={18} /> Baixar meu CV
+          </Cta>
+        </Content>
+        <Portrait>
+          <HeroImage src={foto} alt="José Valdir Calixto" />
+        </Portrait>
+      </Section>
+    </ContainerContact>
   );
 }

@@ -8,8 +8,7 @@ export const colors = {
 };
 
 export const fonts = {
-  sans: 'Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif',
-  mono: '"Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace',
+  mono: '"DM Mono", monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace',
 };
 
 export const layout = { maxWidth: "1200px" };

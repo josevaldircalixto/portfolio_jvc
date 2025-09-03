@@ -12,6 +12,13 @@ export const Viewport = styled.div`
   padding: 8px 0;
   position: relative;
 
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+
   /* fade nas bordas do carrossel */
   mask-image: linear-gradient(
     to right,
@@ -31,10 +38,10 @@ export const Viewport = styled.div`
 
 export const Track = styled.div<{ $duration: number }>`
   display: flex;
-
   gap: 24px;
   height: 50px;
   align-items: center;
+  justify-content: center;
   white-space: nowrap;
   flex-wrap: nowrap;
   will-change: transform;

@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     background: ${colors.bg};
     color: ${colors.text};
-    font-family: ${fonts.sans};    
+    font-family: ${fonts.mono};    
   }
 
   a { color: inherit; text-decoration: none; }
