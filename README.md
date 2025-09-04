@@ -1,69 +1,88 @@
-# React + TypeScript + Vite
+# Portfólio Pessoal – Jose.dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)  
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
+[![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)](https://styled-components.com/)  
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)  
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-Currently, two official plugins are available:
+Um site moderno e responsivo construído com **React, TypeScript e Styled Components**, ideal para apresentar minhas habilidades e projetos de forma clara e atrativa.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Principais Destaques
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Apresentação no **Hero** com cursores piscando (vertical e horizontal).
+- Carrossel de tecnologias em loop, destacando minhas stacks principais.
+- Seções de **projetos**, **contato** e **formulário**, todas totalmente responsivas.
+- Mobile-first com `clamp`, `grid`, `flexbox` e **tokens de design**.
+- Navegação estilizada com **hamburger menu** no mobile.
+- Deploy contínuo com **Vercel**.
+- Arquitetura organizada com componentes reutilizáveis.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📸 Visuais (prints)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Seção    | Preview                                            |
+| -------- | -------------------------------------------------- |
+| Hero     | ![Hero Preview](./public/preview-hero.png)         |
+| Projetos | ![Projects Preview](./public/preview-projects.png) |
+| Contato  | ![Contact Preview](./public/preview-contact.png)   |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tecnologias Utilizadas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **React** + **TypeScript**
+- **Styled Components**, **CSS Grid**, **Flexbox**
+- Responsividade com **clamp**, **media queries**, **design tokens**
+- **react-router-dom**
+- **lucide-react** para ícones
+- **Git/GitHub**, **Vercel** para deploy
+
+---
+
+## 📦 Guia Rápido: Como Rodar o Projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/josevaldircalixto/portfolio_jvc.git
+cd portfolio_jvc
+
+# Instale as dependências
+npm install
+
+# Execute o servidor local
+npm run dev
+
+# Gere o build para produção
+npm run build
+
+# Visualize o build localmente
+npm run preview
+O projeto foi criado com Vite + React + TypeScript, usando npm como gerenciador.
+
+📖 Sobre o Projeto
+Este portfólio é um reflexo das habilidades que adquiri em Front-End:
+componentização, responsividade, experiência do usuário e deploy contínuo.
+
+Ele serve como demonstração prática para recrutadores identificarem minhas competências técnicas e atenção aos detalhes visuais e de performance.
+
+📬 Contato
+LinkedIn	linkedin.com/in/josevaldircalixto
+E-mail	josevaldirdev@gmail.com
+Portfólio	https://portfolio-jvc.vercel.app/
+
+🔮 Próximos Passos
+Tornar o formulário de contato funcional via backend ou integração com email service.
+
+Adicionar sessão de serviços.
+
+Adicionar sistema de e-commerce.
+
+📄 Licença
+Este projeto está licenciado sob a MIT License.
+Para mais detalhes, consulte o arquivo LICENSE.
 ```
