@@ -27,9 +27,9 @@ Um site moderno e responsivo construído com **React, TypeScript e Styled Compon
 
 | Seção    | Preview                                            |
 | -------- | -------------------------------------------------- |
-| Hero     | ![Hero Preview](./public/preview-hero.png)         |
-| Projetos | ![Projects Preview](./public/preview-projects.png) |
-| Contato  | ![Contact Preview](./public/preview-contact.png)   |
+| Hero     | ![Hero Preview](./public/preview/hero.png)         |
+| Projetos | ![Projects Preview](./public/preview/projects.png) |
+| Contato  | ![Contact Preview](./public/preview/contact.png)   |
 
 ---
 
