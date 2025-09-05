@@ -108,7 +108,7 @@ export default function Hero() {
             <TechCarousel speedMs={18000}>{techFallback}</TechCarousel>
           </TechBlock>
 
-          <Cta href="/CV_Jose_Valdir_Calixto.pdf" download>
+          <Cta href="/projects/cv_Jose_Valdir_Calixto_Dev.pdf" download>
             <Download size={18} /> Baixar meu CV
           </Cta>
         </Content>
