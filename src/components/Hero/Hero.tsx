@@ -81,7 +81,7 @@ export default function Hero() {
 
           {/* título + cursor horizontal */}
           <Title>
-            Engenheiro de Software <span className="code">{"{Front-End}"}</span>
+            Desenvolvedor <span className="code">{"{Front-End}"}</span>
             <br />
             focado em Web<CaretH>_</CaretH>
           </Title>
