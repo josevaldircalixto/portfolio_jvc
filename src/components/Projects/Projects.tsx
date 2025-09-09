@@ -125,7 +125,9 @@ export default function Projects() {
           {projects.map((p) => (
             <Card key={p.title}>
               <Media>
-                <img src={p.img} alt={p.title} loading="lazy" />
+                <ActionLink href={p.live} target="_blank" rel="noreferrer">
+                  <img src={p.img} alt={p.title} loading="lazy" />
+                </ActionLink>
               </Media>
 
               <Body>
