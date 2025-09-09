@@ -30,8 +30,8 @@ export default function Footer() {
         {/* Navegação */}
         <Nav>
           <a href="#about">Sobre</a>
-          <a href="#resume">Currículo</a>
-          <a href="#services">Serviços</a>
+          {/* <a href="#resume">Currículo</a>
+          <a href="#services">Serviços</a> */}
           <a href="#projects">Portfólio</a>
           <a href="#contact">Contato</a>
         </Nav>

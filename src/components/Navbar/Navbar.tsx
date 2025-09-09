@@ -45,8 +45,8 @@ export default function Navbar() {
           {/* Desktop */}
           <Nav className="nav-desktop">
             <Link to="/">Sobre</Link>
-            <a href="#resume">Currículo</a>
-            <a href="#services">Serviços</a>
+            {/* <a href="#resume">Currículo</a>
+            <a href="#services">Serviços</a> */}
             <a href="#projects">Portfólio</a>
             <a href="#contact">Contato</a>
 
