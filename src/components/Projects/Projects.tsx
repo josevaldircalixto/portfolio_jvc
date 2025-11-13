@@ -118,8 +118,8 @@ export default function Projects() {
   return (
     <ContainerContact>
       <Section id="projects">
-        <TitleGreen>Projects</TitleGreen>
-        <H2>My Recent Works</H2>
+        <TitleGreen>Projetos</TitleGreen>
+        <H2>Meus Trabalhos Recentes</H2>
 
         <Grid>
           {projects.map((p) => (
@@ -136,10 +136,10 @@ export default function Projects() {
 
                 <Actions>
                   <ActionLink href={p.live} target="_blank" rel="noreferrer">
-                    View Project
+                    Ver Projeto
                   </ActionLink>
                   <ActionLink href={p.code} target="_blank" rel="noreferrer">
-                    View Code
+                    Ver Código
                   </ActionLink>
                 </Actions>
               </Body>

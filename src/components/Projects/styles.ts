@@ -23,7 +23,9 @@ export const TitleGreen = styled.li`
   color: ${colors.accent};
   letter-spacing: 2px;
   text-align: center;
-  padding-top: 24px;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  list-style-type: none;
 `;
 
 export const H2 = styled.h2`

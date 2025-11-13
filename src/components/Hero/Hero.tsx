@@ -74,7 +74,7 @@ export default function Hero() {
         <Content>
           <p className="mono" style={{ opacity: 0.85 }}>
             <CodeTag>&lt;span&gt;</CodeTag>
-            Hey, I’m José
+            Olá, Meu Nome é José
             <CaretV />
             <CodeTag>&lt;/span&gt;</CodeTag>
           </p>
