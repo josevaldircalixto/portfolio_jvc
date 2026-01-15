@@ -1,9 +1,9 @@
 import {
-  Code2,
-  LayoutTemplate,
-  Cpu,
-  Globe2,
-  Search,
+  BarChart3,
+  Database,
+  FileSpreadsheet,
+  Filter,
+  TrendingUp,
   Wrench,
 } from "lucide-react";
 import {
@@ -23,79 +23,69 @@ import {
 export default function Services() {
   const items = [
     {
-      icon: Code2,
-      title: "Desenvolvimento Web Responsivo",
+      icon: BarChart3,
+      title: "Análise e Visualização de Dados",
       text: (
         <>
-          Criação de interfaces modernas utilizando{" "}
-          <span className="accent">HTML</span>,{" "}
-          <span className="accent">CSS</span>,{" "}
-          <span className="accent">JavaScript</span> e{" "}
-          <span className="accent">TypeScript</span>, com foco em estrutura
-          semântica, boas práticas e experiência do usuário em qualquer tela.
+          Criação de relatórios e dashboards utilizando{" "}
+          <span className="accent">Power BI</span>, com foco em indicadores,
+          tendências e apoio à tomada de decisão baseada em dados.
         </>
       ),
     },
     {
-      icon: LayoutTemplate,
-      title: "Interfaces com React",
+      icon: FileSpreadsheet,
+      title: "Organização de Dados em Planilhas",
       text: (
         <>
-          Desenvolvimento de aplicações front-end com{" "}
-          <span className="accent">React</span>,{" "}
-          <span className="accent">Vite</span> e{" "}
-          <span className="accent">Styled Components</span>, aplicando
-          componentização, rotas, estados e layout limpo para projetos como
-          portfólio, sistemas de pedidos e ferramentas utilitárias.
+          Estruturação, limpeza e análise de dados em{" "}
+          <span className="accent">Excel</span> e{" "}
+          <span className="accent">Google Sheets</span>, facilitando a leitura,
+          comparação de períodos e acompanhamento de métricas.
         </>
       ),
     },
     {
-      icon: Cpu,
-      title: "Integração com APIs",
+      icon: Database,
+      title: "Consultas SQL Básicas",
       text: (
         <>
-          Conexão de interfaces front-end com{" "}
-          <span className="accent">APIs REST</span>, consumo de dados em{" "}
-          <span className="accent">JSON</span>, requisições assíncronas e
-          exibição de informações dinâmicas de forma clara e organizada.
+          Utilização de <span className="accent">SQL</span> para consultas,
+          filtros, junções simples e extração de informações relevantes em
+          bancos de dados relacionais.
         </>
       ),
     },
     {
-      icon: Globe2,
-      title: "Sites em WordPress & Elementor",
+      icon: Filter,
+      title: "Tratamento e Transformação de Dados",
       text: (
         <>
-          Criação e personalização de sites profissionais utilizando{" "}
-          <span className="accent">WordPress</span> e{" "}
-          <span className="accent">Elementor</span>, com foco em estrutura,
-          responsividade e facilidade de edição para o cliente.
+          Manipulação de dados utilizando <span className="accent">Python</span>{" "}
+          para limpeza, organização e preparação de conjuntos de dados para
+          análise e visualização.
         </>
       ),
     },
     {
-      icon: Search,
-      title: "SEO On-Page para Negócios",
+      icon: TrendingUp,
+      title: "Análise de Dados de Marketing",
       text: (
         <>
-          Otimização estrutural do front-end com{" "}
-          <span className="accent">HTML semântico</span>, metatags essenciais,
-          responsividade e melhorias de performance para apoiar resultados em
-          mecanismos de busca.
+          Análise de métricas de campanhas digitais como impressões, cliques,
+          conversões e custo, apoiando decisões em{" "}
+          <span className="accent">Google Ads</span> e{" "}
+          <span className="accent">Google Meu Negócio</span>.
         </>
       ),
     },
     {
       icon: Wrench,
-      title: "Manutenção e Evolução de Projetos",
+      title: "Manutenção e Evolução de Relatórios",
       text: (
         <>
-          Ajustes visuais, correções de layout, melhorias de{" "}
-          <span className="accent">responsividade</span> e inclusão de novas
-          funcionalidades em projetos existentes utilizando{" "}
-          <span className="accent">JavaScript</span> ou{" "}
-          <span className="accent">React</span>.
+          Atualização, ajustes e melhoria contínua de relatórios e dashboards,
+          garantindo dados consistentes, organizados e fáceis de interpretar.
         </>
       ),
     },
@@ -104,16 +94,16 @@ export default function Services() {
   return (
     <Wrapper id="services">
       <Section>
-        <Badge>Serviços</Badge>
+        <Badge>Atuação em Dados</Badge>
 
         <Title>
-          Desenvolvendo soluções <span>sob medida</span> para o seu projeto
+          Transformando <span>dados</span> em informações úteis
         </Title>
 
         <Subtitle>
-          Unindo desenvolvimento front-end, experiência com React e criação de
-          sites profissionais, ajudo você a transformar ideias em produtos
-          digitais funcionais, bonitos e prontos para ir ao ar.
+          Atuo na organização, análise e visualização de dados para apoiar
+          decisões de negócio, criando relatórios claros, dashboards objetivos e
+          análises que ajudam equipes a entender melhor seus resultados.
         </Subtitle>
 
         <Grid>
@@ -129,10 +119,9 @@ export default function Services() {
         </Grid>
 
         <FooterText>
-          Empolgado para colaborar em <span>novos projetos</span> e entregar
-          resultados reais. <br />
-          Vamos conversar sobre o que você precisa?{" "}
-          <a href="#contact">Entre em contato.</a>
+          Em busca de <span>novos desafios em dados</span> e oportunidades para
+          aprender e gerar valor. <br />
+          Vamos conversar? <a href="#contact">Entre em contato.</a>
         </FooterText>
       </Section>
     </Wrapper>

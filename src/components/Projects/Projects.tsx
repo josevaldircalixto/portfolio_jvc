@@ -119,7 +119,7 @@ export default function Projects() {
     <ContainerContact>
       <Section id="projects">
         <TitleGreen>Projetos</TitleGreen>
-        <H2>Meus Trabalhos Recentes</H2>
+        <H2>Meus Trabalhos Recentes de Front-End</H2>
 
         <Grid>
           {projects.map((p) => (

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Menu, X } from "lucide-react";
+import { Github, Linkedin, Youtube, Menu, X } from "lucide-react";
+
 import {
   Bar,
   Wrap,
@@ -19,14 +20,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
 
-  // fecha com ESC
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  // trava scroll do body quando aberto (opcional)
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
   }, [open]);
@@ -38,8 +37,9 @@ export default function Navbar() {
           <Brand href="/">
             <span className="mono">&lt;/&gt;</span>
             <span>
-              Jose<span className="dot">.dev</span>
+              José<span className="dot">.analista.de.dados</span>
             </span>
+            <span className="mono">&lt;/&gt;</span>
           </Brand>
 
           {/* Desktop */}
@@ -59,6 +59,7 @@ export default function Navbar() {
               >
                 <Github size={18} />
               </a>
+
               <a
                 href="https://www.linkedin.com/in/josevaldircalixto/"
                 target="_blank"
@@ -66,6 +67,15 @@ export default function Navbar() {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
+              </a>
+
+              <a
+                href="https://www.youtube.com/channel/UCwm1ofyXqb8x6AxHXJVa-zw"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="YouTube"
+              >
+                <Youtube size={18} />
               </a>
             </Social>
           </Nav>
