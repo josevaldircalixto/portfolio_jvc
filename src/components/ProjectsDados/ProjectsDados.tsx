@@ -20,7 +20,7 @@ const projects = [
     stack: "Power BI  ETL  Excel DAX Análise de Dados",
     img: "/projects/imagem_do_dashboard_DRE_powerBI.png",
     code: "https://github.com/josevaldircalixto/dre_completa_com_powerBI",
-    youtube: "COLE_AQUI_O_LINK_DO_VIDEO_DA_DRE",
+    youtube: "https://youtu.be/YEhF-Mr_tug",
   },
   {
     title: "Fluxo de Caixa Completo Power BI",
