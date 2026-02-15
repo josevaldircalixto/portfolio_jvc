@@ -37,7 +37,7 @@ export default function Navbar() {
           <Brand href="/">
             <span className="mono">&lt;/&gt;</span>
             <span>
-              José<span className="dot">.analista.de.dados</span>
+              José<span className="dot">.data.analyst</span>
             </span>
             <span className="mono">&lt;/&gt;</span>
           </Brand>

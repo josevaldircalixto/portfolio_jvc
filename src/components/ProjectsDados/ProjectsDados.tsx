@@ -8,7 +8,8 @@ import {
   Title,
   Stack,
   Actions,
-  ActionLink,
+  ActionButton,
+  MediaLink,
   TitleGreen,
   ContainerContact,
 } from "./styles";
@@ -16,9 +17,17 @@ import {
 const projects = [
   {
     title: "DRE Completa com Power BI",
-    stack: "Power BI  ETL  Excel",
+    stack: "Power BI  ETL  Excel DAX Análise de Dados",
     img: "/projects/imagem_do_dashboard_DRE_powerBI.png",
     code: "https://github.com/josevaldircalixto/dre_completa_com_powerBI",
+    youtube: "COLE_AQUI_O_LINK_DO_VIDEO_DA_DRE",
+  },
+  {
+    title: "Fluxo de Caixa Completo Power BI",
+    stack: "Power BI  ETL  Excel DAX Análise de Dados",
+    img: "/projects/Criando um Fluxo de Caixa completo com power bi.png",
+    code: "https://github.com/josevaldircalixto/criando_um_fluxo_de_caixa_completo_com_power_bi",
+    youtube: "https://youtu.be/xVHWou6O8ds",
   },
 ];
 
@@ -33,10 +42,9 @@ export default function ProjectsDados() {
           {projects.map((p) => (
             <Card key={p.title}>
               <Media>
-                {/* imagem agora também leva ao repositório */}
-                <ActionLink href={p.code} target="_blank" rel="noreferrer">
+                <MediaLink href={p.code} target="_blank" rel="noreferrer">
                   <img src={p.img} alt={p.title} loading="lazy" />
-                </ActionLink>
+                </MediaLink>
               </Media>
 
               <Body>
@@ -44,9 +52,19 @@ export default function ProjectsDados() {
                 <Stack>{p.stack}</Stack>
 
                 <Actions>
-                  <ActionLink href={p.code} target="_blank" rel="noreferrer">
-                    Ver Código
-                  </ActionLink>
+                  <ActionButton href={p.code} target="_blank" rel="noreferrer">
+                    Ver código
+                  </ActionButton>
+
+                  {p.youtube && (
+                    <ActionButton
+                      href={p.youtube}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Ver elaboração no YouTube
+                    </ActionButton>
+                  )}
                 </Actions>
               </Body>
             </Card>

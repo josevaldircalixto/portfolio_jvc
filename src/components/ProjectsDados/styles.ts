@@ -107,28 +107,40 @@ export const Actions = styled.div`
   flex-wrap: wrap;
 `;
 
-export const ActionLink = styled.a`
-  position: relative;
+export const MediaLink = styled.a`
+  display: block;
+  text-decoration: none;
+`;
+
+export const ActionButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: ${colors.accent};
+  color: ${colors.bg};
+
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   font-size: 12px;
-  opacity: 0.95;
 
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -4px;
-    height: 3px;
-    border-radius: 3px;
-    background: ${colors.accent};
-    transform: scaleX(0.4);
-    transform-origin: left;
-    transition: transform 0.25s ease;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+
+  box-shadow: 0 4px 14px rgba(0, 255, 150, 0.25);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 150, 0.35);
+    filter: brightness(1.05);
   }
-  &:hover:after {
-    transform: scaleX(1);
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 255, 150, 0.2);
   }
 `;
