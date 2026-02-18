@@ -29,6 +29,13 @@ const projects = [
     code: "https://github.com/josevaldircalixto/criando_um_fluxo_de_caixa_completo_com_power_bi",
     youtube: "https://youtu.be/xVHWou6O8ds",
   },
+  {
+    title: "Dashboards de Receitas e Despesas",
+    stack: "Power BI  ETL  Excel DAX Análise de Dados",
+    img: "/projects/Dashboard_de_Receitas_e_Despesas_Completo_no_Power_BI_dashboard.png",
+    code: "https://github.com/josevaldircalixto/Dashboard_de_Receitas_e_Despesas_Completo_no_Power_BI",
+    youtube: "https://youtu.be/W8N2b-p7VNA",
+  },
 ];
 
 export default function ProjectsDados() {
